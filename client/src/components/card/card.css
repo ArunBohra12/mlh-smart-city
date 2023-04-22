@@ -1,0 +1,22 @@
+.card {
+  display: grid;
+  margin: 50px;
+  padding: 10px;
+  justify-items: center;
+  background: linear-gradient(114.88deg, #351678 -1.12%, #251644 98.88%);
+  backdrop-filter: blur(25px);
+  max-width: 300px;
+  border-radius: 10px;
+}
+.card-text {
+  display: grid;
+  justify-items: baseline;
+}
+.card-image {
+  max-width: 300px;
+  max-height: 250px;
+  border-radius: 10px;
+}
+.location-text {
+  color: #eb00ff;
+}
