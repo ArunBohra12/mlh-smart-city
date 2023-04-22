@@ -1,0 +1,16 @@
+.homecard {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: linear-gradient(114.88deg, #351678 -1.12%, #251644 98.88%);
+  backdrop-filter: blur(25px);
+  /* Note: backdrop-filter has minimal browser support */
+
+  border-radius: 18px;
+  padding: 50px;
+  margin: 50px;
+}
+.homecard-text {
+  display: grid;
+  align-content: center;
+}
