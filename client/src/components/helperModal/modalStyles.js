@@ -1,15 +1,9 @@
 import { makeStyles } from "@mui/styles";
 
 export default makeStyles(() => ({
-  postBtn: {
-    "& button": {
-      color: "#fff",
-      backgroundColor: "#5235A6",
-    },
-  },
   modal: {
-    borderRadius: "25px",
-    height: "60vh",
+    borderRadius: "10px",
+    height: "80vh",
     // maxHeight: '70vh',
     overflow: "auto",
     "& h1": {
@@ -49,7 +43,7 @@ export default makeStyles(() => ({
     "& input": {
       // border: 'none',
       width: "80%",
-      border: "1px solid #C4C4C4",
+      border: "1px solid #230C53",
       borderRadius: "3px",
       marginBottom: "1.2rem",
       padding: "0.5rem 0.5rem",
