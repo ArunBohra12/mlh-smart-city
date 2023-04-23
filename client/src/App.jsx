@@ -1,5 +1,3 @@
-import Navbar from "./components/navbar/navbar";
-
 import Home from "./pages/home/home";
 import Issues from "./pages/issues/issues";
 import "./app.css";
@@ -18,11 +16,9 @@ function App() {
         <Route path='/signup' element={<Signup />} />
         <Route path='/login' element={<Login />} />
         <Route path='/profile' element={<Profile />} />
-        {/* <SingleIssue /> */}
+        <Route path='/issues' element={<Issues />} />
+        <Route path='/issue/:issue' element={<SingleIssue />} />
       </Routes>
-
-      {/* <Issues /> */}
-      {/* <SingleIssue /> */}
     </div>
   );
 }
