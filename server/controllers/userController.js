@@ -70,7 +70,6 @@ exports.helperProposal = catchAsync(async (req, res, next) => {
 });
 
 exports.getAllDrafts = catchAsync(async (req, res) => {
-  console.log("jrenrvrenv");
   const drafts = await HelperDraft.find();
 
   res.status(200).json({
