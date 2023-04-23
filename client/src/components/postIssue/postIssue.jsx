@@ -6,6 +6,7 @@ import { API, BASE_URL } from "../../utils/APIRoutes";
 
 import useStyles from "./modalStyles.js";
 import Button from "../button/button.component";
+import { getHeaders } from "../../utils/helperFunction";
 
 const style = {
   position: "absolute",
