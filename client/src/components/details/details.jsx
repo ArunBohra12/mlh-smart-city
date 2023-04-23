@@ -1,4 +1,5 @@
 import React from "react";
+import './details.css'
 
 const Details = ({ title, detail }) => {
   return (
