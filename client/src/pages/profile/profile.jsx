@@ -22,7 +22,6 @@ const Profile = () => {
   return (
     <>
       {!userData.isHelper ? <HelperModal token={userData.token} /> : null}
-      <HelperModal token={userData} />
       <div className='profile'>
         <div className='profile-img'>
           <img src={userData.photo} alt='background-img' />
@@ -30,9 +29,9 @@ const Profile = () => {
         <div className='profile-details'>
           <h3>Details</h3>
           <Details title='Name' detail={userData.name} />
-          {/* <Details title='Name' detail='ayush' /> */}
+
           <Details title='Email' detail={userData.email} />
-          {/* <Details title='Email' detail='ayush5april@gmail.com' /> */}
+
           <Details title='Issues Raised' detail='5' />
           <Details title='Issues Resolved' detail='3' />
         </div>
