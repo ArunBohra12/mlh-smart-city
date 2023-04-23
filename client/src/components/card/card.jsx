@@ -93,7 +93,7 @@ function Card(props) {
       {issue.isIssueResolved ? (
         <div className='closedBy' onClick={singlePageNavigator}>
           <h5>Closed By :-</h5>
-          <div>
+          <div className="author" >
             <div className='img-container'>
               <img src={issue.issueClosedBy.photo} alt='' />
             </div>

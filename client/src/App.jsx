@@ -8,6 +8,7 @@ import Login from "./pages/login/login";
 import SingleIssue from "./pages/singleIssue/singleIssue";
 import Navbar from "./components/navbar/navbar";
 import Pending from "./pages/pending/pending";
+import Completed from "./pages/completed/completed";
 
 import "./app.css";
 
@@ -22,6 +23,7 @@ function App() {
         <Route path='/profile' element={<Profile />} />
         <Route path='/issues' element={<Issues />} />
         <Route path='/pending' element={<Pending />} />
+        <Route path='/completed' element={<Completed />} />
         <Route path='/issues/:issue' element={<SingleIssue />} />
       </Routes>
     </div>
