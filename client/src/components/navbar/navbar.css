@@ -1,9 +1,10 @@
 .navbar {
   display: flex;
   align-items: center;
-  justify-content: center;
-  border: 1px solid red;
+  justify-content: space-between;
+  padding: 2rem 5rem;
 }
+
 .menu {
   display: flex;
   align-items: center;
@@ -17,27 +18,30 @@
 
 .menu li {
   position: relative;
-  font-size: 1.2rem;
+  font-size: 1rem;
   padding: 0.5rem 0.8rem;
   margin: 0 0.6rem;
   cursor: pointer;
   text-transform: capitalize;
   font-weight: 600;
   z-index: 1;
-  /* border: 1px solid white; */
 }
 
-.underline{
-position: absolute;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
-border: 1px solid white;
-/* background: blue; */
-/* background: white; */
-background-color: white;
+.navbar-dot {
+  position: absolute;
+  bottom: -3px;
+  left: 50%;
+  width: 6px;
+  height: 6px;
+  z-index: -1;
+  background-color: #eb00ff;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
 
-border-radius: 1.5rem;
-z-index: -1;
+.logo img {
+  height: 1.1rem;
 }
