@@ -35,7 +35,7 @@ const helperSchema = new mongoose.Schema({
   },
   aadharNumber: {
     type: String,
-    required: [true, "You must enter your Aadhar card no.!!"],
+    required: [true, "You must enter your Aadhar card no."],
   },
   issuesApproved: [
     {

@@ -10,7 +10,7 @@ exports.createHelper = catchAsync(async (req, res, next) => {
   const helperDraft = await HelperDraft.findById(draftID);
 
   if (!helperDraft) {
-    return next(new AppError("Couldnt find the helperDraft!!"));
+    return next(new AppError("Couldnt find the helperDraft"));
   }
 
   const userId = helperDraft.user;
@@ -18,7 +18,7 @@ exports.createHelper = catchAsync(async (req, res, next) => {
   const user = await User.findById(userId);
 
   if (!user) {
-    return next(new AppError("Couldnt find the user!!"));
+    return next(new AppError("Couldnt find the user"));
   }
 
   const newHelper = await Helper.create({
@@ -32,7 +32,7 @@ exports.createHelper = catchAsync(async (req, res, next) => {
   });
 
   if (!newHelper) {
-    return next(new AppError("Couldnt create the helper!!"));
+    return next(new AppError("Couldnt create the helper"));
   }
 
   await User.findByIdAndDelete(userId);

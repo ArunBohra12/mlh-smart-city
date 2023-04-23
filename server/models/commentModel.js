@@ -8,7 +8,7 @@ const CommentSchema = new mongoose.Schema(
     },
     comment: {
       type: String,
-      required: [true, "should specify comment!!"],
+      required: [true, "Should specify the comment"],
     },
   },
   {

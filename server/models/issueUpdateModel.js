@@ -8,7 +8,7 @@ const issueUpdateSchema = new mongoose.Schema(
     },
     updateContent: {
       type: String,
-      required: [true, "Update content is required!!"],
+      required: [true, "Update content is required"],
     },
     updateImages: {
       type: String,
