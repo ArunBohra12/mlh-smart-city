@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Box from "@mui/material/Box";
-import Button from "@mui/material/Button";
+// import Button from "@mui/material/Button";
+import Button from '../button/button.component'
 import Modal from "@mui/material/Modal";
 import useStyles from "./modalStyles";
 import styled from "styled-components";
