@@ -1,17 +1,18 @@
-.signup {
-  min-height: 100vh;
-  padding: 4rem 2.5vw;
+.login {
+  height: 100vh;
+  padding: 2.5rem 2.5vw 1.5rem;
   display: flex;
   flex-direction: row-reverse;
   /* align-items: center; */
+  box-sizing: border-box;
 }
 
-.back-img {
+.img {
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
   /* border: 1px solid red; */
-  width: 40vw;
-  height: 135vh;
+  width: 45vw;
+  /* height: calc(100vh - 4rem); */
   background: #351678;
   padding: 0 1.5vw;
   display: flex;
@@ -19,27 +20,26 @@
   justify-content: center;
 }
 
-.back-img img {
+.img img {
   margin: auto;
   /* border: 1px solid red; */
   border-radius: 10px;
   width: 33vw;
-  height: 100vh;
+  /* height: 100vh; */
 }
 
-.signup-form {
+.login-form {
+  /* height: calc(100vh - 4rem); */
   border-bottom-left-radius: 10px;
   border-top-left-radius: 10px;
   /* border: 1px solid red; */
-  width: 55vw;
-  height: 135vh;
-  /* background: linear-gradient(); */
+  width: 50vw;
   background: #351678;
   padding: 2.5rem 0 0 2rem;
   box-sizing: border-box;
 }
 
-.head h2 {
+.heading h2 {
   font-weight: 700;
   font-size: 64px;
   line-height: 0.8;
@@ -47,24 +47,25 @@
   padding: 0;
   margin: 0;
   color: #ffffff;
+  margin-bottom: 1rem;
 }
 
-.head p {
+.heading p {
   /* border: 1px solid red; */
-  font-size: 22px;
+  font-size: 32px;
   line-height: 44px;
   color: #ffffff;
   margin-bottom: 1rem;
 }
 
-.form h5 {
+.login-details h5 {
   font-weight: 500;
   font-size: 26px;
   color: #ffffff;
   margin-bottom: 0.4rem;
 }
 
-.form input {
+.login-details input {
   box-sizing: border-box;
   background: #ffffff;
   /* border: 5px solid #000000; */
@@ -75,23 +76,11 @@
   width: 90%;
 }
 
-div.passwords {
-  display: flex;
+.buttons {
   /* border: 1px solid red; */
-  align-items: center;
-  justify-content: space-between;
 }
 
-div.passwords div {
-  /* border: 1px solid red; */
-  width: 100%;
-}
-
-div.passwords input {
-  width: 85%;
-}
-
-button {
+.login-button {
   background: #5235a6;
   box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.35);
   border-radius: 18px;
@@ -102,18 +91,23 @@ button {
   font-weight: 600;
   border: 0;
   cursor: pointer;
+  margin-right: 2rem;
   margin-top: 1rem;
   margin-bottom: 0.6rem;
 }
 
-h4 {
-  font-size: 22px;
-  line-height: 39px;
-  font-weight: 500;
-  color: #ffffff;
-  margin-bottom: 1rem;
-}
-
-h4 a {
-  text-decoration: underline;
+.back {
+  background: #fff;
+  box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.35);
+  border-radius: 18px;
+  font-size: 1.4rem;
+  padding: 1rem 1rem 0.7rem;
+  line-height: 1;
+  color: #5235a6;
+  font-weight: 600;
+  border: 0;
+  cursor: pointer;
+  margin-right: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 0.6rem;
 }
