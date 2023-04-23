@@ -23,6 +23,12 @@ body {
   overflow-x: hidden;
 }
 
+body,
+#root,
+.app {
+  min-height: 100vh;
+}
+
 a {
   text-decoration: none;
   color: inherit;

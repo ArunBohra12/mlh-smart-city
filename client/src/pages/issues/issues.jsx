@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import Card from "../../components/card/card";
 import PostIssue from "../../components/postIssue/postIssue";
-import "./issues.css";
 import axios from "axios";
 import { API, BASE_URL } from "../../utils/APIRoutes";
+import "./issues.css";
 
 function Issues() {
   const [issues, setIssues] = useState([]);
@@ -19,7 +19,7 @@ function Issues() {
   }, []);
 
   return (
-    <>
+    <div className='issues-page'>
       <PostIssue />
       <div className='issues'>
         {issues &&
@@ -28,7 +28,7 @@ function Issues() {
           })}
         <Card />
       </div>
-    </>
+    </div>
   );
 }
 

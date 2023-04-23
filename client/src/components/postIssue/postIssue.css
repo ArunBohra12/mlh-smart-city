@@ -1,3 +1,4 @@
-.issueButton {
-    border: 1px solid red;
+.issue-button {
+  display: flex;
+  justify-content: flex-end;
 }
