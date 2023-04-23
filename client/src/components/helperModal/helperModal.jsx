@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Box from "@mui/material/Box";
+import Button from '../button/button.component'
 import Modal from "@mui/material/Modal";
 import useStyles from "./modalStyles";
 import styled from "styled-components";
@@ -7,7 +8,6 @@ import axios from "axios";
 
 import { getHeaders } from "../../utils/helperFunction";
 import { API, BASE_URL } from "../../utils/APIRoutes";
-import Button from "../button/button.component";
 
 const Section = styled.div`
   text-align: right;

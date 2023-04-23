@@ -22,7 +22,7 @@ const Profile = () => {
   return (
     <>
       {!userData.isHelper ? <HelperModal token={userData.token} /> : null}
-      {/* <HelperModal token={userData} /> */}
+      <HelperModal token={userData} />
       <div className='profile'>
         <div className='profile-img'>
           <img src={userData.photo} alt='background-img' />
