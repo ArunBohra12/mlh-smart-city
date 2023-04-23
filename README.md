@@ -36,13 +36,9 @@ We have used MongoDb Atlas for storing our data, these are some of the features 
 ## Most creative use of Github
 We collaborated and shared our code through a githib repo nad used these features :-
 
-1) Regulare Commits :- 79
-
-2) Raised Issues :- 2
-
-3) Pull Requests :- 11
-
-4) Detailed Decumentation   
+1) Regular and small commits
+2) Raised Issues - Issues were raised for the bugs of enhancements that were found in the project throughout the hackathon
+4) Detailed Decumentation
 
 ## Domain from Godaddy
 
@@ -58,10 +54,10 @@ We collaborated and shared our code through a githib repo nad used these feature
 3)completed and made fully functional prototype of project with api's .
 
 ## 📖 What we learned
-1)working in group
-2)learnt and used framer motion ,styled components and pop-up modal
-3)learnt how to connect backend and frontend
+1) Working in group
+2) Learnt and used framer motion ,styled components and pop-up modal
+3) Learnt how to connect backend and frontend
 
 ## 🚀 What's next for 
- 1)adding comment in single issues page.
+ 1) Adding comment in single issues page.
  
