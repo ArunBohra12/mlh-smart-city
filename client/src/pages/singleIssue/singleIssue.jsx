@@ -3,14 +3,26 @@ import { FaMapMarkerAlt } from "react-icons/fa";
 import "./singleIssue.css";
 import axios from "axios";
 import { BASE_URL, API } from "../../utils/APIRoutes";
-import { localStorageUser } from "../../utils/globalConstants";
+import { getReadableTime, localStorageUser } from "../../utils/globalConstants";
 import styled from "styled-components";
 import MakeUpdate from "../../components/postUpdate/makeUpdate";
 
-const Section = styled.div``;
+const Section = styled.div`
+  /* border: 1px solid red; */
+  padding: 4rem;
+  padding-top: 0;
+`;
+
+const SingleIssueCont = styled.div`
+  background: linear-gradient(114.88deg, #351678 -1.12%, #251644 98.88%);
+  backdrop-filter: blur(25px);
+  border-radius: 18px;
+`;
 
 const IssueDescription = styled.div`
+  /* border: 1px solid red; */
   display: flex;
+  padding-top: 2rem;
 `;
 
 const ImageContainer = styled.div`
@@ -20,7 +32,7 @@ const ImageContainer = styled.div`
   border-radius: 10px;
 
   img {
-    /* border-radius: 10px; */
+    border-radius: 10px;
     width: 100%;
     height: 100%;
   }
@@ -32,6 +44,8 @@ const DescriptionBox = styled.div`
 
   p {
     margin-bottom: 1.5rem;
+    font-size: 1.2rem;
+    /* padding-top: 1rem; */
   }
 
   h3,
@@ -42,10 +56,12 @@ const DescriptionBox = styled.div`
 
   h4 {
     margin-bottom: 0.5rem;
+    text-decoration: underline;
   }
 
   h3 {
     margin-bottom: 1rem;
+    font-size: 1.2rem;
   }
 `;
 
@@ -76,13 +92,33 @@ const UpdateItem = styled.div`
 
 const UpdatedBy = styled.div`
   display: flex;
-  margin-bottom: 0.8rem;
+  margin-bottom: 0.6rem;
+  /* border: 1px solid red; */
+
+  h4{
+    font-size: 1rem;
+  }
 
   h3,
   h4,
   h5 {
     font-weight: 400;
-    margin-left: 0.5rem;
+    line-height: 1;
+  }
+
+  div{
+    /* border: 1px solid red; */
+    h3,h4{
+      margin: 0;
+      margin-left: 0.5rem;
+    }
+    h3{
+      margin-bottom: 0.3rem;
+      font-size: 1.3rem;
+    }
+    h4{
+      font-size: 1rem;
+    }
   }
 `;
 
@@ -153,50 +189,52 @@ function SingleIssue() {
   return issue ? (
     <Section>
       <MakeUpdate token={userData.token} issueId={issueId} />
-      <IssueDescription>
-        <ImageContainer>
-          <img src={issue.issuePics} alt='' />
-        </ImageContainer>
-        <DescriptionBox>
-          <p>{issue.issueContent}</p>
-          <h4>Location :-</h4>
-          <br />
-          <h3>
-            {issue.locationAddressFirstLine} {issue.locationAddressSecondLine}, {issue.locationCity}, {issue.postalCode}
-          </h3>
-          <h4>Raised By :-</h4>
-          <h3>{issue.issueRaisedBy.name}</h3>
-        </DescriptionBox>
-      </IssueDescription>
-      <Updates>
-        <h2>Updates :-</h2>
-        <UpdateList>
-          {issue.issueUpdates.map((update, index) => {
-            return (
-              <UpdateItem>
-                <UpdatedBy>
-                  <UserImage>
-                    <img src={update.updatedBy.photo} alt='' />
-                  </UserImage>
-                  <div>
-                    <h3>{update.updatedBy.name}</h3>
-                    <h4>{getReadableTime(update.createdAt)}</h4>
-                  </div>
-                </UpdatedBy>
-                <Content>
-                  <p>{update.updateContent}</p>
-                  {update.updateImages ? (
-                    <ContentImg>
-                      <img src={update.updateImages} alt='' />
-                    </ContentImg>
-                  ) : null}
-                </Content>
-              </UpdateItem>
-            );
-          })}
-        </UpdateList>
-      </Updates>
-      <Comments></Comments>
+      <SingleIssueCont>
+        <IssueDescription>
+          <ImageContainer>
+            <img src={issue.issuePics} alt='' />
+          </ImageContainer>
+          <DescriptionBox>
+            <h4>Description :-</h4>
+            <p>{issue.issueContent}</p>
+            <h4>Location :-</h4>
+            <h3>
+              {issue.locationAddressFirstLine} {issue.locationAddressSecondLine}, {issue.locationCity},{" "}
+              {issue.postalCode}
+            </h3>
+            <h4>Raised By :-</h4>
+            <h3>{issue.issueRaisedBy.name}</h3>
+          </DescriptionBox>
+        </IssueDescription>
+        <Updates>
+          <h2>Updates :-</h2>
+          <UpdateList>
+            {issue.issueUpdates.map((update, index) => {
+              return (
+                <UpdateItem>
+                  <UpdatedBy>
+                    <UserImage>
+                      <img src={update.updatedBy.photo} alt='' />
+                    </UserImage>
+                    <div>
+                      <h3>{update.updatedBy.name}</h3>
+                      <h4>{getReadableTime(update.createdAt)}</h4>
+                    </div>
+                  </UpdatedBy>
+                  <Content>
+                    <p>{update.updateContent}</p>
+                    {update.updateImages ? (
+                      <ContentImg>
+                        <img src={update.updateImages} alt='' />
+                      </ContentImg>
+                    ) : null}
+                  </Content>
+                </UpdateItem>
+              );
+            })}
+          </UpdateList>
+        </Updates>
+      </SingleIssueCont>
     </Section>
   ) : (
     <h2>Loading.......Waits!!....</h2>
