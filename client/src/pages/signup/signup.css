@@ -1,18 +1,17 @@
-.login {
-  height: 100vh;
-  padding: 2.5rem 2.5vw 1.5rem;
+.signup {
+  min-height: 100vh;
+  padding: 4rem 2.5vw;
   display: flex;
   flex-direction: row-reverse;
   /* align-items: center; */
-  box-sizing: border-box;
 }
 
-.img {
+.back-img {
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
   /* border: 1px solid red; */
-  width: 45vw;
-  /* height: calc(100vh - 4rem); */
+  width: 40vw;
+  height: 135vh;
   background: #351678;
   padding: 0 1.5vw;
   display: flex;
@@ -20,26 +19,27 @@
   justify-content: center;
 }
 
-.img img {
+.back-img img {
   margin: auto;
   /* border: 1px solid red; */
   border-radius: 10px;
   width: 33vw;
-  /* height: 100vh; */
+  height: 100vh;
 }
 
-.login-form {
-  /* height: calc(100vh - 4rem); */
+.signup-form {
   border-bottom-left-radius: 10px;
   border-top-left-radius: 10px;
   /* border: 1px solid red; */
-  width: 50vw;
+  width: 55vw;
+  height: 135vh;
+  /* background: linear-gradient(); */
   background: #351678;
   padding: 2.5rem 0 0 2rem;
   box-sizing: border-box;
 }
 
-.heading h2 {
+.head h2 {
   font-weight: 700;
   font-size: 64px;
   line-height: 0.8;
@@ -47,25 +47,24 @@
   padding: 0;
   margin: 0;
   color: #ffffff;
-  margin-bottom: 1rem;
 }
 
-.heading p {
+.head p {
   /* border: 1px solid red; */
-  font-size: 32px;
+  font-size: 22px;
   line-height: 44px;
   color: #ffffff;
   margin-bottom: 1rem;
 }
 
-.login-details h5 {
+.form h5 {
   font-weight: 500;
   font-size: 26px;
   color: #ffffff;
   margin-bottom: 0.4rem;
 }
 
-.login-details input {
+.form input {
   box-sizing: border-box;
   background: #ffffff;
   /* border: 5px solid #000000; */
@@ -76,11 +75,23 @@
   width: 90%;
 }
 
-.buttons {
+div.passwords {
+  display: flex;
   /* border: 1px solid red; */
+  align-items: center;
+  justify-content: space-between;
 }
 
-.login-button {
+div.passwords div {
+  /* border: 1px solid red; */
+  width: 100%;
+}
+
+div.passwords input {
+  width: 85%;
+}
+
+button {
   background: #5235a6;
   box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.35);
   border-radius: 18px;
@@ -91,23 +102,18 @@
   font-weight: 600;
   border: 0;
   cursor: pointer;
-  margin-right: 2rem;
   margin-top: 1rem;
   margin-bottom: 0.6rem;
 }
 
-.back {
-  background: #fff;
-  box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.35);
-  border-radius: 18px;
-  font-size: 1.4rem;
-  padding: 1rem 1rem 0.7rem;
-  line-height: 1;
-  color: #5235a6;
-  font-weight: 600;
-  border: 0;
-  cursor: pointer;
-  margin-right: 2rem;
-  margin-top: 1rem;
-  margin-bottom: 0.6rem;
+h4 {
+  font-size: 22px;
+  line-height: 39px;
+  font-weight: 500;
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+h4 a {
+  text-decoration: underline;
 }
