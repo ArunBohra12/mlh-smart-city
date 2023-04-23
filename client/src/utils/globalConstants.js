@@ -1,1 +1,1 @@
-export const localStorageUser = "mlh-smart-city-user"
+export const localStorageUser = "mlh-smart-city-user";

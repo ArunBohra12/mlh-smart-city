@@ -1,4 +1,8 @@
 .home {
+  padding: 50px;
   display: grid;
   justify-items: center;
+}
+.landing-page-header {
+  padding: 20px;
 }

@@ -6,14 +6,14 @@ function HomeCard() {
     <div className='homecard'>
       <div className='homecard-text'>
         <h1>What we do?</h1>
-        <h4>
+        <h3>
           lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
           lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsu
           lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsu lorem ipsum lorem ipsum lorem ipsum
           lorem ipsum lorem ipsum lorem ipsu lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsu
           lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsu lorem ipsum lorem ipsum lorem ipsum
           lorem ipsum lorem ipsum lorem ipsu lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsu
-        </h4>
+        </h3>
       </div>
       <div className='img-home'>
         <img src={card} alt='' />
