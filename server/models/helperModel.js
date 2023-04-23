@@ -33,7 +33,7 @@ const helperSchema = new mongoose.Schema({
     type: String,
     required: [true, "Provide an additional contact number"],
   },
-  aadhaarCardNumber: {
+  aadharNumber: {
     type: String,
     required: [true, "You must enter your Aadhar card no.!!"],
   },
