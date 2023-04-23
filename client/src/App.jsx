@@ -6,11 +6,11 @@ import Profile from "./pages/profile/profile";
 import Signup from "./pages/signup/signup";
 import Login from "./pages/login/login";
 import SingleIssue from "./pages/singleIssue/singleIssue";
+import Navbar from "./components/navbar/navbar";
 import Pending from "./pages/pending/pending";
 import Completed from "./pages/completed/completed";
 
-import './app.css'
-import Navbar from "./components/navbar/navbar";
+import "./app.css";
 
 function App() {
   return (

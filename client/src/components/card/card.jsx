@@ -56,23 +56,23 @@ function Card(props) {
 
   return issue === undefined ? null : (
     <div className='card'>
-      <div className='issue-content' onClick={singlePageNavigator} >
+      <div className='issue-content' onClick={singlePageNavigator}>
         <div className='issue-img'>
           <img src={issue.issuePics} alt='' />
         </div>
         <p>{issue.issueContent}</p>
       </div>
-      <div className='location' onClick={singlePageNavigator} >
+      <div className='location' onClick={singlePageNavigator}>
         <span>
-        <FaMapMarkerAlt />
+          <FaMapMarkerAlt />
         </span>
         <h4>
           {issue.locationAddressFirstLine} {issue.locationAddressSecondLine}, {issue.locationCity}, {issue.postalCode}
         </h4>
       </div>
-      <div className='author-details' onClick={singlePageNavigator} >
+      <div className='author-details' onClick={singlePageNavigator}>
         <h5>Raised By :-</h5>
-        <div className="author" >
+        <div className='author'>
           <div className='img-container'>
             <img src={issue.issueRaisedBy.photo} alt='' />
           </div>
@@ -81,9 +81,9 @@ function Card(props) {
       </div>
 
       {issue.isIssueApproved ? (
-        <div className='approved-by' onClick={singlePageNavigator} >
+        <div className='approved-by' onClick={singlePageNavigator}>
           <h5>Approved By :-</h5>
-          <div className="author" >
+          <div className='author'>
             <div className='img-container'>
               <img src={issue.issueApprovedBy.photo} alt='' />
             </div>
@@ -92,7 +92,7 @@ function Card(props) {
         </div>
       ) : null}
       {issue.isIssueResolved ? (
-        <div className='closedBy' onClick={singlePageNavigator} >
+        <div className='closedBy' onClick={singlePageNavigator}>
           <h5>Closed By :-</h5>
           <div className="author" >
             <div className='img-container'>
