@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import "./navbar.css";
 import { Link } from "react-router-dom";
+import "./navbar.css";
 
 const tabs = [
   {
@@ -36,9 +36,9 @@ function Navbar() {
       </Link>
       <div className='menu'>
         <ul>
-          {tabs.map((tab) => {
+          {tabs.map((tab, index) => {
             return (
-              <Link to={tab.path}>
+              <Link to={tab.path} key={index}>
                 <li key={tab} onMouseEnter={() => setSelectedTab(tab.page)}>
                   <motion.span
                     animate={{ color: tab.page === selectedTab ? "#EB00FF" : "#fff" }}

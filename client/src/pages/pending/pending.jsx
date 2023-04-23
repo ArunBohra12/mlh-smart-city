@@ -20,7 +20,6 @@ const Pending = () => {
   }, []);
   return (
     <>
-      <Navbar />
       <div className='issues'>
         {approvedIssues.map((issue, index) => {
           return <Card issue={issue} />;

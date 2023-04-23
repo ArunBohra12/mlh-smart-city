@@ -19,17 +19,12 @@ const Completed = () => {
 
   return (
     <>
-        <Navbar/>
-        <div className="issues">
-            {
-                completedIssues.map((issue,index) => {
-                    console.log(issue);
-                    return (
-                        <Card issue={issue} key={index} />
-                    )
-                })
-            }
-        </div>
+      <div className='issues'>
+        {completedIssues.map((issue, index) => {
+          console.log(issue);
+          return <Card issue={issue} key={index} />;
+        })}
+      </div>
     </>
   );
 };

@@ -1,9 +1,8 @@
 import React, { useEffect, useState } from "react";
 import Card from "../../components/card/card";
-import "./issues.css";
-import Navbar from "../../components/navbar/navbar";
 import PostIssue from "../../components/postIssue/postIssue";
-import axios from 'axios'
+import "./issues.css";
+import axios from "axios";
 import { API, BASE_URL } from "../../utils/APIRoutes";
 
 function Issues() {
@@ -21,14 +20,12 @@ function Issues() {
 
   return (
     <>
-      <Navbar />
       <PostIssue />
       <div className='issues'>
-        {
-          issues && issues.map((issue,index) => {
-            return <Card key={index} issue={issue} />
-          })
-        }
+        {issues &&
+          issues.map((issue, index) => {
+            return <Card key={index} issue={issue} />;
+          })}
         <Card />
       </div>
     </>

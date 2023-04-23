@@ -1,6 +1,7 @@
 import React from "react";
-import "./singleIssue.css";
 import { FaMapMarkerAlt } from "react-icons/fa";
+import "./singleIssue.css";
+
 function SingleIssue() {
   return (
     <div className='main-div-singleissue'>
@@ -14,7 +15,6 @@ function SingleIssue() {
           />
           <div className='singleissue-text'>
             <h3 className='location-text'>
-              {" "}
               <FaMapMarkerAlt /> ramghat,aligarh
             </h3>
             <h3>Description</h3>
