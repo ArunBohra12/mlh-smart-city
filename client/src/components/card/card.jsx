@@ -53,22 +53,24 @@ function Card(props) {
   };
 
   return issue === undefined ? null : (
-    <div className='card' onClick={singlePageNavigator} >
+    <div className='card' onClick={singlePageNavigator}>
       <div className='issue-content'>
-        <p>{issue.issueContent}</p>
         <div className='issue-img'>
           <img src={issue.issuePics} alt='' />
         </div>
+        <p>{issue.issueContent}</p>
       </div>
       <div className='location'>
+        <span>
         <FaMapMarkerAlt />
+        </span>
         <h4>
           {issue.locationAddressFirstLine} {issue.locationAddressSecondLine}, {issue.locationCity}, {issue.postalCode}
         </h4>
       </div>
       <div className='author-details'>
-        <h5>Raise By :-</h5>
-        <div>
+        <h5>Raised By :-</h5>
+        <div className="author" >
           <div className='img-container'>
             <img src={issue.issueRaisedBy.photo} alt='' />
           </div>

@@ -1,5 +1,12 @@
 .issues {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: auto auto auto;
   margin-top: 1.5rem;
+}
+
+button {
+  background: #5235a6;
+  box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.35);
+  border-radius: 18px;
+  color: #fff;
 }

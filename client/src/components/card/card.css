@@ -1,22 +1,109 @@
 .card {
-  display: grid;
-  margin: 50px;
-  padding: 10px;
-  justify-items: center;
+  /* display: grid; */
+  /* margin: 50px; */
+  /* padding: 10px; */
+  /* justify-items: center; */
   background: linear-gradient(114.88deg, #351678 -1.12%, #251644 98.88%);
   backdrop-filter: blur(25px);
   max-width: 400px;
   border-radius: 10px;
+
+  /* border: 1px solid black; */
+  /* width: 42.5vw; */
+  width: 100%;
+  margin: 0 auto;
+  /* margin: 1rem .5vw 2rem 5vw; */
+  padding: 0.4rem 1rem;
+  border-radius: 10px;
+
+  -webkit-box-shadow: 0px 2px 16px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 2px 16px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 2px 16px 0px rgba(0, 0, 0, 0.75);
 }
-.card-text {
-  display: grid;
-  justify-items: baseline;
+
+.issue-content {
+  text-align: left;
+  margin-bottom: 0.5rem;
 }
-.card-image {
-  max-width: 400px;
-  max-height: 250px;
+
+.issue-content p {
+  margin-bottom: 0.8rem;
+}
+
+.issue-content img {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 0.5rem;
   border-radius: 10px;
 }
-.location-text {
-  color: #eb00ff;
+
+div.location {
+  text-align: left;
+  display: flex;
+  align-items: flex-start;
+  /* border: 1px solid red; */
+}
+
+div.location h4 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1;
+  white-space: pre-wrap;
+  line-height: 1.2;
+}
+
+div.location span {
+  height: fit-content;
+  margin-right: 0.5rem;
+  margin-top: 0.2rem;
+}
+
+div.author-details h5 {
+  font-size: 18px;
+  margin-bottom: 0.8rem;
+}
+
+div.author {
+  /* border: 1px solid red; */
+  display: flex;
+  /* align-items: center; */
+}
+
+div.author-details h3 {
+  font-size: 20px;
+  line-height: 1;
+  /* margin-top: 1rem; */
+  /* margin-bottom: 0.8rem; */
+  /* border: 1px solid red; */
+}
+
+div.img-container {
+  /* border: 1px solid red; */
+  width: 2rem;
+  height: 2rem;
+  margin-right: 0.5rem;
+}
+
+.img-container img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+div.approved-by {
+  display: flex;
+}
+
+div.approved-by h3 {
+  font-size: 20px;
+  line-height: 1;
+}
+
+div.closedBy {
+  display: flex;
+}
+
+div.closedBy h3 {
+  font-size: 20px;
+  line-height: 1;
 }
