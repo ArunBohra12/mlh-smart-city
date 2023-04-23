@@ -6,7 +6,6 @@ import Shanks from "../../assets/shanks.jpg";
 
 import "./profile.css";
 
-import Navbar from "../../components/navbar/navbar";
 import { localStorageUser } from "../../utils/globalConstants";
 import HelperModal from "../../components/helperModal/helperModal";
 
@@ -22,16 +21,16 @@ const Profile = () => {
   }, []);
   return (
     <>
-      {/* {!userData.isHelper ? <HelperModal token={userData.token} /> : null} */}
+      {!userData.isHelper ? <HelperModal token={userData.token} /> : null}
       <HelperModal token={userData} />
       <div className='profile'>
-        <div className='profile-img'>{/* <img src={userData.photo} alt='background-img' /> */}</div>
+        <div className='profile-img'>
+          <img src={userData.photo} alt='background-img' />
+        </div>
         <div className='profile-details'>
           <h3>Details</h3>
-          <Details>
-            {/* <h3>{userData.name}</h3>
-            <h4>{userData.email}</h4> */}
-          </Details>
+          <Details title='Name' detail={userData.name} />
+          <Details title='Email' detail={userData.email} />
           <Details title='Issues Raised' detail='5' />
           <Details title='Issues Resolved' detail='3' />
         </div>
