@@ -5,6 +5,7 @@ import { API, BASE_URL } from "../../utils/APIRoutes";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import { localStorageUser } from "../../utils/globalConstants";
+import { getHeaders } from "../../utils/helperFunction";
 
 function Card(props) {
   const issue = props.issue;
