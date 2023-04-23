@@ -7,7 +7,7 @@ const commentRouter = require("./commentRoutes");
 
 const router = express.Router();
 
-// router.use("/:id/comment", commentRouter);
+router.use("/:id/comment", commentRouter);
 
 router.get("/", issueController.getAllIssues);
 router.post("/", authController.protect, issueController.createIssue);
