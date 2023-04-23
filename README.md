@@ -52,9 +52,9 @@ We collaborated and shared our code through a githib repo nad used these feature
 
 ## 🏅 Accomplishments that we're proud of
 
-1)Since none of us have any prior major experience with designing in Figma, we overcame and built a prototype in 36 hours
-2)made navbar with framer motion
-3)completed and made fully functional prototype of project with api's .
+1) Since none of us have any prior major experience with designing in Figma, we overcame and built a prototype in 36 hours
+2) Made navbar with framer motion
+3) Completed and made fully functional prototype of project with api's .
 
 ## 📖 What we learned
 
