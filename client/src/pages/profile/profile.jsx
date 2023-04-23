@@ -22,17 +22,15 @@ const Profile = () => {
   }, []);
   return (
     <>
-      {!userData.isHelper ? <HelperModal token={userData.token} /> : null}
-
+      {/* {!userData.isHelper ? <HelperModal token={userData.token} /> : null} */}
+      <HelperModal token={userData} />
       <div className='profile'>
-        <div className='profile-img'>
-          <img src={userData.photo} alt='background-img' />
-        </div>
+        <div className='profile-img'>{/* <img src={userData.photo} alt='background-img' /> */}</div>
         <div className='profile-details'>
           <h3>Details</h3>
           <Details>
-            <h3>{userData.name}</h3>
-            <h4>{userData.email}</h4>
+            {/* <h3>{userData.name}</h3>
+            <h4>{userData.email}</h4> */}
           </Details>
           <Details title='Issues Raised' detail='5' />
           <Details title='Issues Resolved' detail='3' />

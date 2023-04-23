@@ -23,7 +23,7 @@ const style = {
   width: 700,
   // height: 300,
   bgcolor: "background.paper",
-  border: "1px solid #C4C4C4",
+  border: "1px solid #230C53",
   boxShadow: 24,
   p: 4,
 };
@@ -74,7 +74,7 @@ const HelperModal = (props) => {
         <Box sx={style} className={classes.modal}>
           <h1>Serve the nation by becoming a HELPER</h1>
           <form onSubmit={postHelperDraft}>
-            <h3>Reason to becomen a Helper</h3>
+            <h3>Reason to become a Helper</h3>
             <textarea
               name='reason'
               placeholder='Reason for applying'

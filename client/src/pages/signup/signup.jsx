@@ -75,7 +75,7 @@ const Signup = () => {
       </div>
       <div className='signup-form'>
         <div className='head'>
-          <h2>SmartCity</h2>
+          <h2>CivicConnect</h2>
           <p>On the way to create sophisticated city</p>
           <div className='form'>
             <form onSubmit={submitHandler}>

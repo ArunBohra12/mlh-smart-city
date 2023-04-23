@@ -3,7 +3,7 @@ import { makeStyles } from "@mui/styles";
 export default makeStyles(() => ({
   modal: {
     borderRadius: "10px",
-    height: "80vh",
+    height: "70vh",
     // maxHeight: '70vh',
     overflow: "auto",
     "& h1": {
@@ -68,7 +68,7 @@ export default makeStyles(() => ({
       resize: "none",
       borderRadius: "3px",
       marginBottom: "1rem",
-      border: "1px solid #C4C4C4",
+      border: "1px solid #230C53",
       fontWeight: "400",
       fontSize: "16px",
       color: "#2B2A35",
@@ -76,7 +76,7 @@ export default makeStyles(() => ({
 
       "&:focus": {
         outline: "none",
-        border: "1px solid #C4C4C4",
+        border: "2px solid #230C53",
       },
     },
 

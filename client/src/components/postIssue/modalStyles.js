@@ -9,7 +9,7 @@ export default makeStyles(() => ({
   },
   modal: {
     borderRadius: "25px",
-    height: "60vh",
+    height: "95vh",
     // maxHeight: '70vh',
     overflow: "auto",
     "& h1": {
@@ -49,7 +49,7 @@ export default makeStyles(() => ({
     "& input": {
       // border: 'none',
       width: "80%",
-      border: "1px solid #C4C4C4",
+      border: "1px solid #230C53",
       borderRadius: "3px",
       marginBottom: "1.2rem",
       padding: "0.5rem 0.5rem",
@@ -74,7 +74,7 @@ export default makeStyles(() => ({
       resize: "none",
       borderRadius: "3px",
       marginBottom: "1rem",
-      border: "1px solid #C4C4C4",
+      border: "1px solid #230C53",
       fontWeight: "400",
       fontSize: "16px",
       color: "#2B2A35",
@@ -82,7 +82,7 @@ export default makeStyles(() => ({
 
       "&:focus": {
         outline: "none",
-        border: "1px solid #C4C4C4",
+        border: "2px solid #230C53",
       },
     },
 
@@ -95,8 +95,9 @@ export default makeStyles(() => ({
       fontWeight: "400",
       fontSize: "16px",
       lineHeight: "19px",
+
       // color: '#DADADA',
-      border: "1px solid #C4C4C4",
+      border: "1px solid #230C53",
       borderRadius: "3px",
       padding: "0.4rem 0 0.4rem 0.4rem",
       // padding: '0.4rem 0.8rem 0 0.8rem',
