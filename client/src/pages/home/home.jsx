@@ -8,7 +8,8 @@ function Home() {
     <>
       <Navbar />
       <div className='home'>
-        <h1>Creating a Smart and Sophisticated City for the future</h1>
+        <h1 className='landing-page-header'>Creating a Smart and Sophisticated City for the future</h1>
+        <div className='home-reactangle'></div>
         <img src={homeImg} alt='no' />
         <HomeCard />
       </div>
