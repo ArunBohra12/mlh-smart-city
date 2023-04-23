@@ -3,7 +3,6 @@ import "./signup.css";
 import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 import { API, BASE_URL } from "../../utils/APIRoutes.js";
-// import { localStorageUser } from "../utils/globalConstants";
 import authImg from "../../assets/auth-img.gif";
 import { localStorageUser } from "../../utils/globalConstants";
 

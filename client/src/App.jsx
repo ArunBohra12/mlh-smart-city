@@ -1,16 +1,19 @@
+import { Routes, Route } from "react-router-dom";
+
 import Home from "./pages/home/home";
 import Issues from "./pages/issues/issues";
-import "./app.css";
-
-import { Routes, Route } from "react-router-dom";
 import Profile from "./pages/profile/profile";
 import Signup from "./pages/signup/signup";
 import Login from "./pages/login/login";
 import SingleIssue from "./pages/singleIssue/singleIssue";
+import Navbar from "./components/navbar/navbar";
+
+import "./app.css";
 
 function App() {
   return (
     <div className='app'>
+      <Navbar />
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/signup' element={<Signup />} />

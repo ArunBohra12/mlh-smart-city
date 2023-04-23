@@ -1,14 +1,12 @@
 import React from "react";
-import "./profile.css";
 import Details from "../../components/details/details";
-
 import Shanks from "../../assets/shanks.jpg";
-import Navbar from "../../components/navbar/navbar";
+
+import "./profile.css";
 
 const Profile = () => {
   return (
     <>
-      <Navbar />
       <div className='profile'>
         <div className='profile-img'>
           <img src={Shanks} alt='background-img' />
