@@ -1,5 +1,4 @@
 import axios from "axios";
-import Navbar from "../../components/navbar/navbar";
 import { API, BASE_URL } from "../../utils/APIRoutes";
 import "./pending.css";
 
@@ -22,7 +21,7 @@ const Pending = () => {
     <>
       <div className='issues'>
         {approvedIssues.map((issue, index) => {
-          return <Card issue={issue} />;
+          return <Card key={index} issue={issue} />;
         })}
       </div>
     </>

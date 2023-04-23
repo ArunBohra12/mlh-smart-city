@@ -3,9 +3,11 @@ import Box from "@mui/material/Box";
 import Modal from "@mui/material/Modal";
 import { localStorageUser } from "../../utils/globalConstants";
 import { API, BASE_URL } from "../../utils/APIRoutes";
+import axios from "axios";
 
 import useStyles from "./modalStyles.js";
 import Button from "../button/button.component";
+import { getHeaders } from "../../utils/helperFunction";
 
 const style = {
   position: "absolute",
