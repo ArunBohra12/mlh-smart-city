@@ -95,7 +95,7 @@ const UpdatedBy = styled.div`
   margin-bottom: 0.6rem;
   /* border: 1px solid red; */
 
-  h4{
+  h4 {
     font-size: 1rem;
   }
 
@@ -106,17 +106,18 @@ const UpdatedBy = styled.div`
     line-height: 1;
   }
 
-  div{
+  div {
     /* border: 1px solid red; */
-    h3,h4{
+    h3,
+    h4 {
       margin: 0;
       margin-left: 0.5rem;
     }
-    h3{
+    h3 {
       margin-bottom: 0.3rem;
       font-size: 1.3rem;
     }
-    h4{
+    h4 {
       font-size: 1rem;
     }
   }

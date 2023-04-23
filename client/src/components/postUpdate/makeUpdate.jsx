@@ -1,12 +1,12 @@
-import React, { useState } from 'react'
-import Box from '@mui/material/Box';
-import Button from '../button/button.component';
-import Modal from '@mui/material/Modal';
-import useStyles from '../postIssue/modalStyles'
-import styled from 'styled-components';
-import axios from 'axios';
-import { API, BASE_URL } from '../../utils/APIRoutes';
-import { getHeaders } from '../../utils/helperFunction';
+import React, { useState } from "react";
+import Box from "@mui/material/Box";
+import Button from "../button/button.component";
+import Modal from "@mui/material/Modal";
+import useStyles from "../postIssue/modalStyles";
+import styled from "styled-components";
+import axios from "axios";
+import { API, BASE_URL } from "../../utils/APIRoutes";
+import { getHeaders } from "../../utils/helperFunction";
 
 const Section = styled.div`
   margin: 1rem 0 2rem;
