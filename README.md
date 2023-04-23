@@ -36,13 +36,13 @@ We have used MongoDb Atlas for storing our data, these are some of the features 
 ## Most creative use of Github
 We collaborated and shared our code through a githib repo nad used these features :-
 
-1) Regulare Commits :- 78
+1) Regulare Commits :- 79
 
 2) Raised Issues :- 2
 
 3) Pull Requests :- 11
 
-4) Detailed Decumentation :-  
+4) Detailed Decumentation   
 
 ## Domain from Godaddy
 
