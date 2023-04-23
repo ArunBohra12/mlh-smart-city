@@ -5,6 +5,7 @@ import axios from "axios";
 import { BASE_URL, API } from "../../utils/APIRoutes";
 import { localStorageUser } from "../../utils/globalConstants";
 import styled from "styled-components";
+import MakeUpdate from "../../components/postUpdate/makeUpdate";
 
 const Section = styled.div``;
 
@@ -144,13 +145,14 @@ function SingleIssue() {
     async function fetchUserData() {
       const data = await JSON.parse(localStorage.getItem(localStorageUser));
       setUserData(data);
+      console.log(data);
     }
     fetchUserData();
   }, []);
 
   return issue ? (
     <Section>
-      {/* <MakeUpdate token={userData.token} issueId={issueId} /> */}
+      <MakeUpdate token={userData.token} issueId={issueId} />
       <IssueDescription>
         <ImageContainer>
           <img src={issue.issuePics} alt='' />
