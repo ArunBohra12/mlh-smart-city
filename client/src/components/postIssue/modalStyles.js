@@ -10,12 +10,11 @@ export default makeStyles(() => ({
   modal: {
     borderRadius: "25px",
     height: "60vh",
-    // maxHeight: '70vh',
     overflow: "auto",
+
     "& h1": {
       margin: "0 auto",
       textAlign: "center",
-      // border: '1px solid red',
       color: "#2B2A35",
       marginBottom: "1rem",
       fontSize: "1.2rem",
@@ -24,8 +23,6 @@ export default makeStyles(() => ({
 
     "& p": {
       margin: "0",
-      // width: '90%',
-      // border: '1px solid green',
       fontSize: "1rem",
       color: "#656565",
       marginBottom: "0.7rem",
@@ -47,7 +44,6 @@ export default makeStyles(() => ({
     },
 
     "& input": {
-      // border: 'none',
       width: "80%",
       border: "1px solid #C4C4C4",
       borderRadius: "3px",
@@ -57,7 +53,6 @@ export default makeStyles(() => ({
 
       "&:focus": {
         outline: "none",
-        // border: 'none'
       },
     },
 
@@ -95,27 +90,14 @@ export default makeStyles(() => ({
       fontWeight: "400",
       fontSize: "16px",
       lineHeight: "19px",
-      // color: '#DADADA',
       border: "1px solid #C4C4C4",
       borderRadius: "3px",
       padding: "0.4rem 0 0.4rem 0.4rem",
-      // padding: '0.4rem 0.8rem 0 0.8rem',
       marginBottom: "0.8rem",
 
       "&:focus": {
         outline: "none",
-        // background: 'red'
       },
-    },
-
-    "& button": {
-      background: "linear-gradient(90deg, #FF5924 0%, #FF0703 100%)",
-      borderRadius: "10px",
-      border: "none",
-      color: "#FFFFFF",
-      fontSize: "16px",
-      padding: "0.6rem 4rem",
-      cursor: "pointer",
     },
   },
 }));

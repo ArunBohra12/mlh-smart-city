@@ -10,7 +10,7 @@ const Signup = () => {
   const [userData, setUserData] = useState({
     name: "",
     email: "",
-    aadhaarCardNumber: "",
+    aadharNumber: "",
     phoneNumber: "",
     password: "",
     passwordConfirm: "",
@@ -55,7 +55,7 @@ const Signup = () => {
       name: userData.name,
       email: userData.email,
       photo: photo,
-      aadhaarCardNumber: userData.aadhaarCardNumber,
+      aadharNumber: userData.aadharNumber,
       phoneNumber: userData.phoneNumber,
       password: userData.password,
       passwordConfirm: userData.passwordConfirm,
@@ -100,9 +100,9 @@ const Signup = () => {
               <h5>Aadhar Card</h5>
               <input
                 type='text'
-                name='aadhaarCardNumber'
+                name='aadharNumber'
                 placeholder='Aadhaar Card Number'
-                value={userData.aadhaarCardNumber}
+                value={userData.aadharNumber}
                 onChange={(e) => signupHandler(e)}
               />
               <h5>Phone Number</h5>

@@ -162,7 +162,7 @@ const PostIssue = () => {
               onChange={(e) => formHandler(e)}
             />
 
-            <button type='submit'>Submit Issue</button>
+            <Button type='submit'>Submit Issue</Button>
           </form>
         </Box>
       </Modal>
