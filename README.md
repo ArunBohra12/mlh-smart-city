@@ -36,11 +36,11 @@ We have used MongoDb Atlas for storing our data, these are some of the features 
 ## Most creative use of Github
 We collaborated and shared our code through a githib repo nad used these features :-
 
-1) Regulare Commits :-
+1) Regulare Commits :- 78
 
-2) Raised Issues :- 
+2) Raised Issues :- 2
 
-3) Pull Requests :-
+3) Pull Requests :- 11
 
 4) Detailed Decumentation :-  
 
@@ -48,13 +48,20 @@ We collaborated and shared our code through a githib repo nad used these feature
 
 ## 🧠 Challenges we ran into
 
-1) 
+1) integration of api
+2) designing and prototyping in figma
 
 ## 🏅 Accomplishments that we're proud of
 
-1) We were able to build a prototype with 36 hours along with a web design
+1)Since none of us have any prior major experience with designing in Figma, we overcame and built a prototype in 36 hours
+2)made navbar with framer motion
+3)completed and made fully functional prototype of project with api's .
 
 ## 📖 What we learned
+1)working in group
+2)learnt and used framer motion ,styled components and pop-up modal
+3)learnt how to connect backend and frontend
 
 ## 🚀 What's next for 
-
+ 1)adding comment in single issues page.
+ 
