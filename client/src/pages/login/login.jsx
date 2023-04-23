@@ -39,7 +39,7 @@ const Login = () => {
       </div>
       <div className='login-form'>
         <div className='heading'>
-          <h2>SmartCity</h2>
+          <h2>CivicConnect</h2>
           <p>On the way to create sophisticated city</p>
           <div className='login-form'>
             <form className='login-details' onSubmit={handleSubmit}>
