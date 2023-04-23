@@ -1,9 +1,16 @@
 .issues-page {
   padding: 0 5rem;
+  padding-bottom: 6rem;
 }
 
 .issues {
-  display: grid;
-  grid-template-columns: auto auto auto;
+  display: flex;
+  flex-wrap: wrap;
   margin-top: 1.5rem;
+  gap: 4rem;
+  padding: 0 5rem;
+}
+
+.issues .card {
+  margin: 0;
 }
